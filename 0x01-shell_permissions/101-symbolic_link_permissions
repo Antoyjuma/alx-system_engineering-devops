@@ -1,2 +1,2 @@
-#!/bin/b
+#!/bin/bash
 chwon -h vincent:staff _hello
