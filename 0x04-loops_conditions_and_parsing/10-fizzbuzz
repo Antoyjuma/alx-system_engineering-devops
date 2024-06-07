@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+<<<<<<< HEAD
 # FizzBuzz with Bash Script
 
 # Displays FizzBuzz when the number is a multiple of 3 and 5
@@ -20,4 +21,19 @@ do
 		echo "Buzz"
 	else echo "$i"
 	fi
+=======
+# Solves the "FizzBuzz" challenge
+for ((i = 1; i < 101; i++)) do
+  if [[ $((i % 3)) -eq 0 ]]; then
+    if [[ $((i % 5)) -eq 0 ]]; then
+      echo "FizzBuzz"
+    else
+      echo "Fizz"
+    fi
+  elif [[ $((i % 5)) -eq 0 ]]; then
+    echo "Buzz"
+  else
+    echo "$i"
+  fi
+>>>>>>> 2f0e71a0fa8675ec3ed1f8c1f55a17f1845367e7
 done

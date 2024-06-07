@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+<<<<<<< HEAD
 #displays time for 12 hours and 59 minutes
 i=0
 while ((i <= 12))
@@ -11,4 +12,17 @@ do
 		((j = j + 1))
 	done
 ((i = i + 1))
+=======
+# Prints the hours from 0 to 12 inclusive and minutes from
+# 1 to 59 inclusive
+hour=0
+while [[ $hour -lt 13 ]]; do
+  minute=1
+  echo "Hour: $hour"
+  while [[ $minute -lt 60 ]]; do
+    echo "$minute"
+    minute="$((minute + 1))"
+  done
+  hour="$((hour + 1))"
+>>>>>>> 2f0e71a0fa8675ec3ed1f8c1f55a17f1845367e7
 done
