@@ -1,7 +1,16 @@
 #!/usr/bin/env bash
+<<<<<<< HEAD
+# This script is displaying "Best School" 10 times
+counter=0
+until [ $counter -eq 10 ]
+do
+	echo "Best School"
+	((counter++))
+=======
 # Prints "Best School" 10 times
 i=0
 until [[ $i -eq 10 ]]; do
   echo "Best School"
   i="$((i + 1))"
+>>>>>>> 2f0e71a0fa8675ec3ed1f8c1f55a17f1845367e7
 done

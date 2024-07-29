@@ -1,4 +1,23 @@
 #!/usr/bin/env bash
+<<<<<<< HEAD
+# Gives info on school file
+
+if [ ! -e school ]
+then
+    echo "school file does not exist"
+else
+    echo "school file exists"
+    if [ -s school ]
+    then
+        echo "school file is not empty"
+    else
+        echo "school file is empty"
+    fi
+    if [ -f school ]
+    then
+        echo "school is a regular file"
+    fi
+=======
 # Prints information about a file
 file_name="school"
 if test -a $file_name; then
@@ -13,4 +32,5 @@ if test -a $file_name; then
   fi
 else
   echo "$file_name file does not exist"
+>>>>>>> 2f0e71a0fa8675ec3ed1f8c1f55a17f1845367e7
 fi

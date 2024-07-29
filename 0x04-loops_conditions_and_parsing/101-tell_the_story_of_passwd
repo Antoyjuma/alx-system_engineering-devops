@@ -1,4 +1,12 @@
 #!/usr/bin/env bash
+<<<<<<< HEAD
+#displays the content of /etc/passwd
+FILE="/etc/passwd"
+while IFS=: read -r f1 f2 f3 f4 f5 f6 f7
+do
+    echo "The user $f1 is part of the $f4 gang, lives in $f6 and rides $f7. $f3's place is protected by the passcode $f2, more info about the user here: $f5"
+done < "$FILE"
+=======
 # Prints a story about the contents of the /etc/passwd file
 file_name="/etc/passwd"
 i=0
@@ -15,3 +23,4 @@ rides ${fields[6]}. ${fields[2]}'s place is protected by the passcode ${fields[1
 info about the user here: ${fields[4]}"
   done
 fi
+>>>>>>> 2f0e71a0fa8675ec3ed1f8c1f55a17f1845367e7

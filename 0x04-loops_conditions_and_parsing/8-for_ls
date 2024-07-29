@@ -1,4 +1,13 @@
 #!/usr/bin/env bash
+<<<<<<< HEAD
+# script that displays the content of the current directory
+# In a list format
+# Where only the part of the name after the first dash
+# is displayed (refer to the example)
+list=$(ls)
+for item in $list; do
+	echo "$item" | cut -d '-' -f2
+=======
 # Prints the name of the contents of the current directory
 # after the first "-" character
 files=()
@@ -16,4 +25,5 @@ for ((i = 0; i < "${#files[@]}"; i++)) do
   if [[ $file_printed == "0" ]]; then
     echo "${files[i]:2}"
   fi
+>>>>>>> 2f0e71a0fa8675ec3ed1f8c1f55a17f1845367e7
 done

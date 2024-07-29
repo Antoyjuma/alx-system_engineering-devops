@@ -1,4 +1,12 @@
 #!/usr/bin/env bash
+<<<<<<< HEAD
+# Displays the content of the file /etc/passwd
+# only displays the username, user id, and user home directory path
+
+while read -r passwd; do
+  echo "$passwd" | cut -d ':' -f1,3,6
+done < "/etc/passwd"
+=======
 # Prints some fields of the /etc/passwd file
 file_name="/etc/passwd"
 i=0
@@ -13,3 +21,4 @@ if test -f $file_name; then
     echo "${fields[0]}:${fields[2]}:${fields[5]}"
   done
 fi
+>>>>>>> 2f0e71a0fa8675ec3ed1f8c1f55a17f1845367e7
